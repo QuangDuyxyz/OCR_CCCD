@@ -1,0 +1,14 @@
+@"
+# Ignore all by default
+/*
+
+# Allow only these
+!/app.py
+!/Model/
+!.gitignore
+!.gitattributes
+
+# Ignore heavy weights
+/Model/best.pt
+/Model/model.safetensors
+"@ | Out-File -Encoding utf8 .gitignore
